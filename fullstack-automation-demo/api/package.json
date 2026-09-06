@@ -1,0 +1,15 @@
+{
+  "name": "fullstack-automation-api",
+  "version": "1.0.0",
+  "description": "API de ejemplo para automatización inteligente Full Stack",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "test": "echo \"No tests configured yet\" && exit 0"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.3"
+  }
+}

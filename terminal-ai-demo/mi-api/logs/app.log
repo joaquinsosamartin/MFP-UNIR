@@ -1,0 +1,6 @@
+2026-01-10 10:00:01 INFO Application started
+2026-01-10 10:00:05 INFO Database connected
+2026-01-10 10:01:12 WARN Slow request detected
+2026-01-10 10:02:44 ERROR Cannot connect to external service
+2026-01-10 10:03:10 INFO Request completed
+2026-01-10 10:04:33 ERROR Timeout while processing payment

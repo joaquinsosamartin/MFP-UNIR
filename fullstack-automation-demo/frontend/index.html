@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Full Stack Automation Demo</title>
+</head>
+<body>
+  <h1>Full Stack Automation Demo</h1>
+  <p>Este frontend forma parte de una demostración de automatización inteligente.</p>
+
+  <button id="loadMessage">Cargar mensaje de la API</button>
+  <pre id="result"></pre>
+
+  <script>
+    const button = document.getElementById('loadMessage');
+    const result = document.getElementById('result');
+
+    button.addEventListener('click', async () => {
+      try {
+        const response = await fetch('http://localhost:3000/api/message');
+        const data = await response.json();
+        result.textContent = JSON.stringify(data, null, 2);
+      } catch (error) {
+        result.textContent = 'Error llamando a la API: ' + error.message;
+      }
+    });
+  </script>
+</body>
+</html>
